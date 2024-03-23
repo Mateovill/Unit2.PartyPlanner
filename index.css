@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*we are editing the container class in order to add certain elements to the section */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+/*This class is in charge of making sure that everything is being added dynamically
+the grid-template-column is making sure that everything is repeated and that all the info
+will fit automatically as the content is added dynamically*/
+.content_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/*In this class we are adding elements to ensure that the card is visible and styled.
+the overflow element ensures that if any content in the card is too large to be contained in the card
+the element will make sure it will be hidden */
+.card {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.header-name{
+font-size: 2rem;
+}
+.card_body {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.btn {
+    margin-top: 1rem;
+    font-size: 1rem;
+  background-color: red;
+  
+}
+.card-footer:hover {
+    font-size: 1.5rem;
+  background-color: blue;
+  color: azure;
+  
+}
+#form{
+    border: 1px solid black;
+margin-left: 1rem;
+margin-right: 45rem;
+padding-bottom: 5px ;
+}
